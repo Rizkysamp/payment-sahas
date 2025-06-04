@@ -95,7 +95,7 @@
     }
 
     .collapsible {
-      background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffff);
+      background: linear-gradient(45deg, #595056, #e2e1f0, #595056);
       background-size: 200% 200%;
       animation: gradientBtn 3s ease infinite;
       color: white;
@@ -231,22 +231,6 @@
       content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
     });
   });
-
-  // Partikel warna-warni
-  const canvas = document.getElementById("particles");
-  const ctx = canvas.getContext("2d");
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  const particles = [];
-  for (let i = 0; i < 80; i++) {
-    particles.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      size: Math.random() * 2 + 1,
-      color: `hsl(${Math.random() * 360}, 100%, 60%)`,
-      speedX: Math.random() * 0.5 - 0.25,
-      speedY: Math.random() * 0.5 - 0.25,
-    });
   }
   function drawParticles() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
