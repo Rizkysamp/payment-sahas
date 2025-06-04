@@ -95,7 +95,7 @@
     }
 
     .collapsible {
-      background: linear-gradient(45deg, #595056, #e2e1f0, #595056);
+      background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffff);
       background-size: 200% 200%;
       animation: gradientBtn 3s ease infinite;
       color: white;
@@ -163,10 +163,10 @@
 
 <!-- Welcome Animation -->
 <div id="welcome-message" class="welcome-message">
-  <h1>SahasMarket</h1>
+  <h1>hey, i am SahasMarket</h1>
   <p>Selamat Datang Di Website Payment</p>
  <p>Website By SahasOfficial</p>
-  <button id="GO-TO-PAYMENT" class="btn-link">GO TO PAYMENT</button>
+  <button id="go-to-payment" class="btn-link">GO TO PAYMENT</button>
 </div>
 
 <!-- Audio dengan multiple sources -->
@@ -230,7 +230,9 @@
       const content = this.nextElementSibling;
       content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
     });
-    // Partikel warna-warni
+  });
+
+  // Partikel warna-warni
   const canvas = document.getElementById("particles");
   const ctx = canvas.getContext("2d");
   canvas.width = window.innerWidth;
