@@ -230,6 +230,21 @@
       const content = this.nextElementSibling;
       content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
     });
+    // Partikel warna-warni
+  const canvas = document.getElementById("particles");
+  const ctx = canvas.getContext("2d");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  const particles = [];
+  for (let i = 0; i < 80; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      size: Math.random() * 2 + 1,
+      color: `hsl(${Math.random() * 360}, 100%, 60%)`,
+      speedX: Math.random() * 0.5 - 0.25,
+      speedY: Math.random() * 0.5 - 0.25,
+    });
   });
   }
   function drawParticles() {
